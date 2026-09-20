@@ -1,0 +1,1416 @@
+{
+ "$schema": "./schemas/trip-data.schema.json",
+ "schemaVersion": "2.0-lite",
+ "config": {
+  "schemaVersion": "1.0.0",
+  "modules": {
+   "flights": true,
+   "overview": true,
+   "itinerary": true,
+   "todo": true,
+   "driving": false,
+   "ledger": true
+  },
+  "language": "zh-CN",
+  "persistence": {
+   "mode": "local"
+  }
+ },
+ "metadata": {
+  "tripId": "guizhou-qiantu-2026-09-26th",
+  "title": "贵州 6 天 5 晚徒步 · 无限黔徒第 26 期",
+  "language": "zh-CN",
+  "assets": {
+   "routeMaps": [
+    "assets/maps/templates/template-07-compact-basin.webp"
+   ]
+  }
+ },
+ "trip": {
+  "status": "draft",
+  "startDate": "2026-09-22",
+  "endDate": "2026-09-27",
+  "dayCount": 6,
+  "nightCountAway": 5,
+  "countries": [
+   {
+    "code": "CN",
+    "name": "China",
+    "nameZh": "中国"
+   }
+  ],
+  "primaryDestinationCountries": [
+   "CN"
+  ],
+  "primaryDestinationName": "贵州",
+  "primaryDestinationNameEn": "GUIZHOU",
+  "primaryDestinationCity": "贵阳",
+  "citiesAndAreas": [
+   "贵阳",
+   "安顺",
+   "羊皮洞",
+   "大圣之眼",
+   "夜郎天路",
+   "花江峡谷",
+   "云峰屯堡"
+  ],
+  "routeSummary": "上海 → 贵阳 → 羊皮洞 → 大圣之眼 → 夜郎天路 → 花江峡谷 → 云峰屯堡 → 贵阳 → 上海",
+  "groupSize": null
+ },
+ "flightJourneys": [
+  {
+   "id": "journey-out",
+   "title": "上海 → 贵阳（9 月 22 日）",
+   "status": "booked"
+  },
+  {
+   "id": "journey-back",
+   "title": "贵阳 → 上海（9 月 27 日）",
+   "status": "booked"
+  }
+ ],
+ "flights": [
+  {
+   "id": "leg-out-1",
+   "journeyId": "journey-out",
+   "sequence": 1,
+   "flightNumber": "9C7117",
+   "airline": {
+    "code": "9C",
+    "name": "Spring Airlines",
+    "nameZh": "春秋航空"
+   },
+   "departure": {
+    "airportCode": "SHA",
+    "airportName": "上海虹桥国际机场",
+    "city": "上海",
+    "terminal": "T1",
+    "date": "2026-09-22",
+    "time": "07:05",
+    "utcOffset": "+08:00"
+   },
+   "arrival": {
+    "airportCode": "KWE",
+    "airportName": "贵阳龙洞堡国际机场",
+    "city": "贵阳",
+    "terminal": "T2",
+    "date": "2026-09-22",
+    "time": "10:05",
+    "utcOffset": "+08:00"
+   }
+  },
+  {
+   "id": "leg-back-1",
+   "journeyId": "journey-back",
+   "sequence": 1,
+   "flightNumber": "CZ8264",
+   "airline": {
+    "code": "CZ",
+    "name": "China Southern Airlines",
+    "nameZh": "中国南方航空"
+   },
+   "departure": {
+    "airportCode": "KWE",
+    "airportName": "贵阳龙洞堡国际机场",
+    "city": "贵阳",
+    "terminal": "T3",
+    "date": "2026-09-27",
+    "time": "18:00",
+    "utcOffset": "+08:00"
+   },
+   "arrival": {
+    "airportCode": "SHA",
+    "airportName": "上海虹桥国际机场",
+    "city": "上海",
+    "terminal": "T2",
+    "date": "2026-09-27",
+    "time": "20:20",
+    "utcOffset": "+08:00"
+   }
+  }
+ ],
+ "accommodations": [
+  {
+   "id": "stay-guiyang",
+   "name": "贵阳市区酒店（名称待补充）",
+   "placeId": "guiyang-city",
+   "checkIn": {
+    "date": "2026-09-22"
+   },
+   "checkOut": {
+    "date": "2026-09-24"
+   },
+   "nights": 2,
+   "note": "9.22 集合日与 9.23 徒步后入住贵阳市区；具体酒店名称资料未提供，待补充。"
+  },
+  {
+   "id": "stay-anshun",
+   "name": "安顺市区酒店（名称待补充）",
+   "placeId": "anshun-city",
+   "checkIn": {
+    "date": "2026-09-24"
+   },
+   "checkOut": {
+    "date": "2026-09-27"
+   },
+   "nights": 3,
+   "note": "9.24—9.26 大圣之眼 / 夜郎天路 / 花江峡谷徒步期间入住安顺市区；具体酒店名称待补充。9.27 为返程日无住宿。"
+  }
+ ],
+ "groundTransport": {
+  "note": "全程 24 小时接机/接站 + 每日旅游车或包车接送，无自驾租车信息。",
+  "rentalCar": null,
+  "rentalChecklist": [],
+  "drivingNotes": [],
+  "drivingReferenceLinks": []
+ },
+ "days": [
+  {
+   "id": "day-01",
+   "day": 1,
+   "date": "2026-09-22",
+   "title": "贵阳集合日 · 自由活动",
+   "locations": [
+    "上海",
+    "贵阳龙洞堡机场",
+    "贵阳市区"
+   ],
+   "notes": [
+    "今日为集合日，提供 24 小时“无缝衔接”接站服务，送达市区酒店办理入住。",
+    "早到可自由游玩：黔灵山公园（看猴子/寺庙）、甲秀楼、省博/地质博物馆。",
+    "美食推荐：青云市集、二七小吃街、丝娃娃、肠旺面、凯里酸汤鱼、留一手烤鱼。",
+    "行前准备：今日需自行购置次日路餐、头灯电池、防水袋、垃圾袋（详见 To Do）。",
+    "穿衣：白天短袖/薄长袖+休闲长裤+舒适运动鞋；傍晚加薄外套。气候多云 18—28℃。"
+   ],
+   "schedule": [
+    {
+     "id": "d1-01",
+     "time": "07:05—10:05",
+     "type": "flight",
+     "text": "上海虹桥T1 → 贵阳龙洞堡T2（9C7117 · 春秋航空）",
+     "placeIds": [
+      "guiyang-airport"
+     ]
+    },
+    {
+     "id": "d1-02",
+     "time": "抵达后",
+     "type": "transfer",
+     "text": "24h 接机/接站送至贵阳市区酒店办理入住",
+     "placeIds": [
+      "guiyang-city"
+     ]
+    },
+    {
+     "id": "d1-03",
+     "time": "下午",
+     "type": "activity",
+     "text": "自由活动：黔灵山公园、甲秀楼、省博/地质博物馆"
+    },
+    {
+     "id": "d1-04",
+     "time": "晚上",
+     "type": "meal",
+     "text": "美食推荐：青云市集、二七小吃街、丝娃娃、肠旺面、凯里酸汤鱼"
+    }
+   ]
+  },
+  {
+   "id": "day-02",
+   "day": 2,
+   "date": "2026-09-23",
+   "title": "羊皮洞瀑布徒步",
+   "locations": [
+    "贵阳市区",
+    "羊皮洞瀑布"
+   ],
+   "notes": [
+    "徒步约 8km，累计爬升约 400m（下降约 300m）；湿滑陡峭，需防滑鞋 + 备换衣裤鞋袜。",
+    "中午路餐自带；瀑布附近有村民摆摊卖水/小吃、水靴出租。",
+    "穿衣：速干T恤+速干长裤+防滑徒步鞋（可租水靴）；外穿雨衣/冲锋衣，手机相机套防水袋。",
+    "气候：晴转小雨 17—27℃，雨后山石湿滑、体感骤降 3—5℃。"
+   ],
+   "schedule": [
+    {
+     "id": "d2-01",
+     "time": "上午",
+     "type": "transfer",
+     "text": "乘车约 70km（约1.5h）前往徒步起点"
+    },
+    {
+     "id": "d2-02",
+     "time": "上午",
+     "type": "activity",
+     "text": "下探峡谷，抵达羊皮洞瀑布，水雾中观瀑创作"
+    },
+    {
+     "id": "d2-03",
+     "time": "中午",
+     "type": "meal",
+     "text": "开阔处分享自带路餐"
+    },
+    {
+     "id": "d2-04",
+     "time": "下午",
+     "type": "activity",
+     "text": "探索瀑布旁洞穴，徒步环线返回"
+    },
+    {
+     "id": "d2-05",
+     "time": "傍晚",
+     "type": "transfer",
+     "text": "乘车返回贵阳市区住宿"
+    }
+   ]
+  },
+  {
+   "id": "day-03",
+   "day": 3,
+   "date": "2026-09-24",
+   "title": "大圣之眼溶洞徒步",
+   "locations": [
+    "贵阳市区",
+    "大圣之眼",
+    "安顺市区"
+   ],
+   "notes": [
+    "徒步约 9km，累计爬升约 400m；喀斯特地貌，少许路段需手脚并用攀爬。",
+    "洞内常年 12—18℃ 且泥泞；带好头灯+备用电池，穿不怕刮蹭旧衣物，可加薄手套。",
+    "穿衣：速干长袖+速干长裤+抓地徒步鞋；出洞后加薄外套防着凉。",
+    "气候：多云转阴 17—27℃。"
+   ],
+   "schedule": [
+    {
+     "id": "d3-01",
+     "time": "上午",
+     "type": "transfer",
+     "text": "乘车约 120km（约2h）前往徒步起点"
+    },
+    {
+     "id": "d3-02",
+     "time": "上午",
+     "type": "activity",
+     "text": "穿越天坑、崖壁小路与原始灌木林，进入溶洞系统"
+    },
+    {
+     "id": "d3-03",
+     "time": "中午",
+     "type": "meal",
+     "text": "宽敞洞厅内用餐"
+    },
+    {
+     "id": "d3-04",
+     "time": "下午",
+     "type": "activity",
+     "text": "寻找洞顶“大圣之眼”天光，出洞"
+    },
+    {
+     "id": "d3-05",
+     "time": "下午",
+     "type": "transfer",
+     "text": "乘车前往“瀑布之乡”安顺市入住"
+    }
+   ]
+  },
+  {
+   "id": "day-04",
+   "day": 4,
+   "date": "2026-09-25",
+   "title": "夜郎天路 · 龙脊山",
+   "locations": [
+    "安顺市区",
+    "夜郎天路龙脊山"
+   ],
+   "notes": [
+    "徒步约 10km，海拔爬升约 800m（下降约 500m）；全程强度最大、温差最大。",
+    "走乡道、爬坡、穿越蕨类灌木丛与山脊石林；建议护膝，长裤防刮蹭。",
+    "穿衣：出发单层速干长袖，登顶 2000m+ 山脊风大温低，包里常备薄抓绒+防风冲锋衣。",
+    "气候：阴转雨 17—27℃；夜郎天路山顶体感比市区低 4—6℃、风大。"
+   ],
+   "schedule": [
+    {
+     "id": "d4-01",
+     "time": "上午",
+     "type": "transfer",
+     "text": "乘车约 100km（约1.5h）前往徒步起点"
+    },
+    {
+     "id": "d4-02",
+     "time": "上午",
+     "type": "activity",
+     "text": "布依族村寨启程，沿“羊肠小道”持续向上攀登"
+    },
+    {
+     "id": "d4-03",
+     "time": "中午",
+     "type": "activity",
+     "text": "登顶龙脊山（海拔 2000m+），俯瞰峡谷与牂牁江"
+    },
+    {
+     "id": "d4-04",
+     "time": "下午",
+     "type": "transfer",
+     "text": "穿越至终点，乘车返回安顺"
+    }
+   ]
+  },
+  {
+   "id": "day-05",
+   "day": 5,
+   "date": "2026-09-26",
+   "title": "花江峡谷 · 北盘江大桥",
+   "locations": [
+    "安顺市区",
+    "花江峡谷"
+   ],
+   "notes": [
+    "9 月按季节走 B 线花江峡谷：山脊徒步约 9km，爬升约 300m，预计 4—5 小时。",
+    "峡谷风大，休息时及时加衣；前一晚降雨路面湿滑。",
+    "穿衣：速干长袖+速干长裤+防滑徒步鞋，冲锋衣/雨衣随身。",
+    "气候：雨转阴 16—26℃。备选 A 线关岭冰臼（10月—次年4月）。"
+   ],
+   "schedule": [
+    {
+     "id": "d5-01",
+     "time": "上午",
+     "type": "transfer",
+     "text": "乘车约 100km（约1h）前往花江峡谷"
+    },
+    {
+     "id": "d5-02",
+     "time": "上午",
+     "type": "activity",
+     "text": "北盘江大峡谷山脊徒步，仰望“世界第一高桥”花江大桥"
+    },
+    {
+     "id": "d5-03",
+     "time": "中午",
+     "type": "meal",
+     "text": "峡谷中分享自带路餐"
+    },
+    {
+     "id": "d5-04",
+     "time": "下午",
+     "type": "transfer",
+     "text": "乘车返回安顺"
+    }
+   ]
+  },
+  {
+   "id": "day-06",
+   "day": 6,
+   "date": "2026-09-27",
+   "title": "云鹫山 · 云峰屯堡 → 返程",
+   "locations": [
+    "安顺市区",
+    "云峰屯堡",
+    "贵阳龙洞堡机场"
+   ],
+   "notes": [
+    "徒步约 5km，爬升约 300m；以景区游览为主，最轻松的一天。",
+    "约 15:00 抵机场、15:30 抵贵阳北站；返程请买 16:30 后高铁或 17:00 后航班。",
+    "穿衣：长袖T恤/薄卫衣+休闲长裤+防滑运动鞋，带雨具；登顶风凉加薄外套。",
+    "石板路湿滑注意脚下。"
+   ],
+   "schedule": [
+    {
+     "id": "d6-01",
+     "time": "上午",
+     "type": "transfer",
+     "text": "乘车约 20km（约0.5h）前往云峰屯堡"
+    },
+    {
+     "id": "d6-02",
+     "time": "上午",
+     "type": "activity",
+     "text": "登顶云鹫山，俯瞰万亩喀斯特坝子"
+    },
+    {
+     "id": "d6-03",
+     "time": "上午",
+     "type": "activity",
+     "text": "深入云峰屯堡，看石头城堡、听地戏，了解屯堡文化"
+    },
+    {
+     "id": "d6-04",
+     "time": "中午",
+     "type": "meal",
+     "text": "庆功宴中餐"
+    },
+    {
+     "id": "d6-05",
+     "time": "下午",
+     "type": "transfer",
+     "text": "乘车约 130km（约2h）返回贵阳机场/高铁站"
+    },
+    {
+     "id": "d6-06",
+     "time": "18:00—20:20",
+     "type": "flight",
+     "text": "贵阳龙洞堡T3 → 上海虹桥T2（CZ8264 · 中国南方航空）",
+     "placeIds": [
+      "guiyang-airport"
+     ]
+    }
+   ]
+  }
+ ],
+ "places": [
+  {
+   "id": "guiyang-airport",
+   "name": "贵阳龙洞堡机场",
+   "nameZh": "贵阳龙洞堡国际机场",
+   "cityOrArea": "贵阳",
+   "category": "airport"
+  },
+  {
+   "id": "guiyang-city",
+   "name": "贵阳市区",
+   "nameZh": "贵阳市区",
+   "cityOrArea": "贵阳",
+   "category": "city"
+  },
+  {
+   "id": "yangpidong",
+   "name": "羊皮洞瀑布",
+   "nameZh": "羊皮洞瀑布",
+   "cityOrArea": "贵阳/清镇",
+   "category": "hike"
+  },
+  {
+   "id": "dashengzhiyan",
+   "name": "大圣之眼",
+   "nameZh": "大圣之眼溶洞",
+   "cityOrArea": "安顺",
+   "category": "hike"
+  },
+  {
+   "id": "anshun-city",
+   "name": "安顺市区",
+   "nameZh": "安顺市区",
+   "cityOrArea": "安顺",
+   "category": "city"
+  },
+  {
+   "id": "yelang-tianlu",
+   "name": "夜郎天路·龙脊山",
+   "nameZh": "夜郎天路龙脊山",
+   "cityOrArea": "六枝/牂牁",
+   "category": "hike"
+  },
+  {
+   "id": "huajiang-canyon",
+   "name": "花江峡谷",
+   "nameZh": "花江峡谷·北盘江大桥",
+   "cityOrArea": "关岭",
+   "category": "hike"
+  },
+  {
+   "id": "yunfeng-tunbao",
+   "name": "云峰屯堡",
+   "nameZh": "云峰屯堡·云鹫山",
+   "cityOrArea": "安顺",
+   "category": "sightseeing"
+  }
+ ],
+ "restaurants": [],
+ "bookingsAndTickets": [],
+ "ticketPlanning": {
+  "statusStorage": "local",
+  "statusStorageNote": "门票状态默认只保存在当前浏览器。本行程为徒步团，资料未提供门票/预约信息，相关条目随每日行程展示。",
+  "items": []
+ },
+ "preTrip": {
+  "packingItems": [
+   {
+    "id": "todo-01",
+    "text": "速干 T 恤 3 件、速干长袖 1—2 件（三层穿衣内层）",
+    "completed": false
+   },
+   {
+    "id": "todo-02",
+    "text": "薄抓绒 1 件、防风防雨冲锋衣 1 件（中层/外层）",
+    "completed": false
+   },
+   {
+    "id": "todo-03",
+    "text": "速干长裤 2 条、备换袜子 3—4 双",
+    "completed": false
+   },
+   {
+    "id": "todo-04",
+    "text": "备换衣裤鞋袜 1 套（9.23 瀑布日用，放车上）",
+    "completed": false
+   },
+   {
+    "id": "todo-05",
+    "text": "防滑徒步鞋（勿穿新鞋）",
+    "completed": false
+   },
+   {
+    "id": "todo-06",
+    "text": "轻便雨衣/雨披（山路不便打伞）",
+    "completed": false
+   },
+   {
+    "id": "todo-07",
+    "text": "头灯 + 备用电池（9.24 溶洞必备）",
+    "completed": false
+   },
+   {
+    "id": "todo-08",
+    "text": "防晒霜、遮阳帽、墨镜、驱蚊液、护膝",
+    "completed": false
+   },
+   {
+    "id": "todo-09",
+    "text": "防水袋（保护手机/相机）、登山杖",
+    "completed": false
+   },
+   {
+    "id": "todo-10",
+    "text": "水袋/水壶（每日 1—1.5L）、能量补给",
+    "completed": false
+   },
+   {
+    "id": "todo-11",
+    "text": "急救小包、充电宝",
+    "completed": false
+   },
+   {
+    "id": "todo-12",
+    "text": "垃圾袋（野外徒步垃圾全部带走）",
+    "completed": false
+   },
+   {
+    "id": "todo-13",
+    "text": "每日自备路餐/午餐食品（易携带且保质）",
+    "completed": false
+   },
+   {
+    "id": "todo-14",
+    "text": "出发前再查一次黔中最新逐日天气预报",
+    "completed": false
+   }
+  ],
+  "preparationsExplicitlyMentioned": [],
+  "missingNote": "除以上装备与行前准备外，资料中未提供其他准备事项。"
+ },
+ "mapLinks": {
+  "providedGoogleMapsLinks": [],
+  "note": "",
+  "cityLevelNavigationDisabled": false,
+  "navigationPolicy": {
+   "noNavigationTypes": [],
+   "selfNavigationTypes": []
+  },
+  "navigationPlaces": []
+ },
+ "issuesAndUncertainties": [
+  {
+   "id": "issue-hotel",
+   "severity": "info",
+   "status": "pending",
+   "title": "酒店具体名称未提供",
+   "detail": "资料仅写“贵阳市区 / 安顺市区”，未给出酒店名称，已标待补充。"
+  },
+  {
+   "id": "issue-ticket",
+   "severity": "info",
+   "status": "pending",
+   "title": "门票/预约信息未提供",
+   "detail": "行程为徒步团，未提供门票或预约信息；门票资料将随每日行程展示（当前无数据）。"
+  },
+  {
+   "id": "issue-price",
+   "severity": "info",
+   "status": "pending",
+   "title": "费用/记账数据为空",
+   "detail": "资料中无任何价格或费用信息，记账模块已开启但留空待补充。"
+  }
+ ],
+ "map": {
+  "schemaVersion": "1.0-lite",
+  "mapMode": "template-auto",
+  "templateId": "auto",
+  "defaultRegionId": "guizhou",
+  "disclaimer": "本图仅表达地点的相对方位与路线顺序，不代表真实比例或精确地理边界。",
+  "region": {
+   "id": "guizhou",
+   "label": "贵州",
+   "countryCode": "CN",
+   "title": "贵州 · 黔徒徒步路线",
+   "heading": "GUIZHOU",
+   "description": "贵阳 · 羊皮洞 · 大圣之眼 · 夜郎天路 · 花江峡谷 · 云峰屯堡 6 天徒步示意图"
+  },
+  "places": [
+   {
+    "id": "guiyang-airport",
+    "name": "贵阳龙洞堡机场",
+    "nameZh": "贵阳龙洞堡国际机场",
+    "countryCode": "CN",
+    "query": "贵阳龙洞堡国际机场",
+    "overview": true,
+    "geo": {
+     "lat": 26.5383,
+     "lng": 106.8014
+    }
+   },
+   {
+    "id": "guiyang-city",
+    "name": "贵阳市区",
+    "nameZh": "贵阳市区",
+    "countryCode": "CN",
+    "query": "贵阳市区",
+    "overview": true,
+    "geo": {
+     "lat": 26.647,
+     "lng": 106.63
+    }
+   },
+   {
+    "id": "yangpidong",
+    "name": "羊皮洞瀑布",
+    "nameZh": "羊皮洞瀑布",
+    "countryCode": "CN",
+    "query": "羊皮洞瀑布 贵阳清镇",
+    "overview": true,
+    "geo": {
+     "lat": 26.82,
+     "lng": 106.32
+    }
+   },
+   {
+    "id": "dashengzhiyan",
+    "name": "大圣之眼",
+    "nameZh": "大圣之眼溶洞",
+    "countryCode": "CN",
+    "query": "大圣之眼 安顺",
+    "overview": true,
+    "geo": {
+     "lat": 25.75,
+     "lng": 106.1
+    }
+   },
+   {
+    "id": "anshun-city",
+    "name": "安顺市区",
+    "nameZh": "安顺市区",
+    "countryCode": "CN",
+    "query": "安顺市区",
+    "overview": true,
+    "geo": {
+     "lat": 26.25,
+     "lng": 105.93
+    }
+   },
+   {
+    "id": "yelang-tianlu",
+    "name": "夜郎天路·龙脊山",
+    "nameZh": "夜郎天路龙脊山",
+    "countryCode": "CN",
+    "query": "夜郎天路 六枝牂牁",
+    "overview": true,
+    "geo": {
+     "lat": 26.15,
+     "lng": 105.55
+    }
+   },
+   {
+    "id": "huajiang-canyon",
+    "name": "花江峡谷",
+    "nameZh": "花江峡谷北盘江大桥",
+    "countryCode": "CN",
+    "query": "花江峡谷 关岭",
+    "overview": true,
+    "geo": {
+     "lat": 25.45,
+     "lng": 105.62
+    }
+   },
+   {
+    "id": "yunfeng-tunbao",
+    "name": "云峰屯堡",
+    "nameZh": "云峰屯堡云鹫山",
+    "countryCode": "CN",
+    "query": "云峰屯堡 安顺",
+    "overview": true,
+    "geo": {
+     "lat": 26.28,
+     "lng": 105.92
+    }
+   }
+  ],
+  "routes": [
+   {
+    "day": 1,
+    "placeIds": [
+     "guiyang-airport",
+     "guiyang-city"
+    ]
+   },
+   {
+    "day": 2,
+    "placeIds": [
+     "guiyang-city",
+     "yangpidong"
+    ]
+   },
+   {
+    "day": 3,
+    "placeIds": [
+     "guiyang-city",
+     "dashengzhiyan",
+     "anshun-city"
+    ]
+   },
+   {
+    "day": 4,
+    "placeIds": [
+     "anshun-city",
+     "yelang-tianlu"
+    ]
+   },
+   {
+    "day": 5,
+    "placeIds": [
+     "anshun-city",
+     "huajiang-canyon"
+    ]
+   },
+   {
+    "day": 6,
+    "placeIds": [
+     "anshun-city",
+     "yunfeng-tunbao",
+     "guiyang-airport"
+    ]
+   }
+  ],
+  "dailyRoutes": [
+   {
+    "day": 1,
+    "placeIds": [
+     "guiyang-airport",
+     "guiyang-city"
+    ],
+    "scheduleItems": [
+     [
+      "d1-01",
+      "d1-02"
+     ]
+    ]
+   },
+   {
+    "day": 2,
+    "placeIds": [
+     "guiyang-city",
+     "yangpidong"
+    ],
+    "scheduleItems": [
+     [
+      "d2-01",
+      "d2-02"
+     ]
+    ]
+   },
+   {
+    "day": 3,
+    "placeIds": [
+     "guiyang-city",
+     "dashengzhiyan",
+     "anshun-city"
+    ],
+    "scheduleItems": [
+     [
+      "d3-01",
+      "d3-02"
+     ],
+     [
+      "d3-04",
+      "d3-05"
+     ]
+    ]
+   },
+   {
+    "day": 4,
+    "placeIds": [
+     "anshun-city",
+     "yelang-tianlu"
+    ],
+    "scheduleItems": [
+     [
+      "d4-01",
+      "d4-02"
+     ]
+    ]
+   },
+   {
+    "day": 5,
+    "placeIds": [
+     "anshun-city",
+     "huajiang-canyon"
+    ],
+    "scheduleItems": [
+     [
+      "d5-01",
+      "d5-02"
+     ]
+    ]
+   },
+   {
+    "day": 6,
+    "placeIds": [
+     "anshun-city",
+     "yunfeng-tunbao",
+     "guiyang-airport"
+    ],
+    "scheduleItems": [
+     [
+      "d6-01",
+      "d6-02"
+     ],
+     [
+      "d6-05",
+      "d6-06"
+     ]
+    ]
+   }
+  ]
+ },
+ "routeMap": {
+  "defaultRegionId": "guizhou",
+  "regions": [
+   {
+    "id": "guizhou",
+    "label": "贵州",
+    "countryCode": "CN",
+    "scope": "template-schematic",
+    "mapMode": "frozen-template",
+    "templateId": "compact-basin",
+    "mapModeReason": "north-south-route",
+    "mapModeMetrics": {
+     "placeCount": 8,
+     "geoPlaceCount": 8,
+     "widthKm": 124.6,
+     "heightKm": 152.07,
+     "spanKm": 169.07,
+     "averageNearestKm": 30.16,
+     "components": 1,
+     "largestLegKm": 112.89,
+     "jumpRatio": 1.94
+    },
+    "days": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6
+    ],
+    "canvas": {
+     "width": 1448,
+     "height": 1086
+    },
+    "projection": {
+     "type": "relative-schematic",
+     "bounds": null
+    },
+    "baseImage": "assets/maps/templates/template-07-compact-basin.webp",
+    "title": "贵州 · 黔徒徒步路线",
+    "ariaLabel": "贵州模板化旅行路线示意图，共6天",
+    "description": "贵阳 · 羊皮洞 · 大圣之眼 · 夜郎天路 · 花江峡谷 · 云峰屯堡 6 天徒步示意图",
+    "disclaimer": "本图仅表达地点的相对方位与路线顺序，不代表真实比例或精确地理边界。",
+    "heading": {
+     "text": "GUIZHOU",
+     "x": 33,
+     "y": 105,
+     "size": 40
+    },
+    "legend": {
+     "x": 35,
+     "y": 168,
+     "gap": 43
+    },
+    "annotations": [],
+    "routes": [
+     {
+      "day": 1,
+      "color": "#397dc1",
+      "placeIds": [
+       "guiyang-airport",
+       "guiyang-city"
+      ],
+      "paths": [
+       "M949.39 376.02 C915.7 364.5 887.8 344.8 867.35 318.02"
+      ],
+      "overviewPaths": [
+       "M949.39 376.02 C915.7 364.5 887.8 344.8 867.35 318.02"
+      ]
+     },
+     {
+      "day": 2,
+      "color": "#e77e22",
+      "placeIds": [
+       "guiyang-city",
+       "yangpidong"
+      ],
+      "paths": [
+       "M867.35 318.02 C840.3 288.1 807.3 267.9 770.34 258.6"
+      ],
+      "overviewPaths": [
+       "M867.35 318.02 C840.3 288.1 807.3 267.9 770.34 258.6"
+      ]
+     },
+     {
+      "day": 3,
+      "color": "#618344",
+      "placeIds": [
+       "guiyang-city",
+       "dashengzhiyan",
+       "anshun-city"
+      ],
+      "paths": [
+       "M867.35 318.02 C835.2 452.4 776.2 573.7 693.59 674.73 C692.9 617.8 676.9 565.5 646.47 521.02"
+      ],
+      "overviewPaths": [
+       "M867.35 318.02 C835.2 452.4 776.2 573.7 693.59 674.73 C692.9 617.8 676.9 565.5 646.47 521.02"
+      ]
+     },
+     {
+      "day": 4,
+      "color": "#209aaa",
+      "placeIds": [
+       "anshun-city",
+       "yelang-tianlu"
+      ],
+      "paths": [
+       "M646.47 521.02 C597.4 505.9 548.2 505.3 501.73 519.17"
+      ],
+      "overviewPaths": [
+       "M646.47 521.02 C597.4 505.9 548.2 505.3 501.73 519.17"
+      ]
+     },
+     {
+      "day": 5,
+      "color": "#8865a5",
+      "placeIds": [
+       "anshun-city",
+       "huajiang-canyon"
+      ],
+      "paths": [
+       "M646.47 521.02 C632.6 625.0 591.7 716.9 526.15 791.4"
+      ],
+      "overviewPaths": [
+       "M646.47 521.02 C632.6 625.0 591.7 716.9 526.15 791.4"
+      ]
+     },
+     {
+      "day": 6,
+      "color": "#df6185",
+      "placeIds": [
+       "anshun-city",
+       "yunfeng-tunbao",
+       "guiyang-airport"
+      ],
+      "paths": [
+       "M646.47 521.02 C646.3 486.6 636.8 454.9 618.62 427.86 C726.4 380.6 838.9 363.0 949.39 376.02"
+      ],
+      "overviewPaths": [
+       "M646.47 521.02 C646.3 486.6 636.8 454.9 618.62 427.86 C726.4 380.6 838.9 363.0 949.39 376.02"
+      ]
+     }
+    ],
+    "places": [
+     {
+      "id": "guiyang-airport",
+      "x": 949.39,
+      "y": 376.02,
+      "color": "#397dc1",
+      "tx": 981.39,
+      "ty": 344.02,
+      "size": 24,
+      "anchor": "start",
+      "lines": [
+       "贵阳龙洞堡机场 /",
+       "贵阳龙洞堡国际机场"
+      ],
+      "query": "贵阳龙洞堡国际机场",
+      "geo": {
+       "lat": 26.5383,
+       "lng": 106.8014
+      },
+      "days": [
+       1,
+       6
+      ]
+     },
+     {
+      "id": "guiyang-city",
+      "x": 867.35,
+      "y": 318.02,
+      "color": "#397dc1",
+      "tx": 835.35,
+      "ty": 368.02,
+      "size": 24,
+      "anchor": "end",
+      "lines": [
+       "贵阳市区"
+      ],
+      "query": "贵阳市区",
+      "geo": {
+       "lat": 26.647,
+       "lng": 106.63
+      },
+      "days": [
+       1,
+       2,
+       3
+      ]
+     },
+     {
+      "id": "yangpidong",
+      "x": 770.34,
+      "y": 258.6,
+      "color": "#e77e22",
+      "tx": 848.34,
+      "ty": 196.6,
+      "size": 24,
+      "anchor": "start",
+      "lines": [
+       "羊皮洞瀑布"
+      ],
+      "query": "羊皮洞瀑布 贵阳清镇",
+      "geo": {
+       "lat": 26.82,
+       "lng": 106.32
+      },
+      "days": [
+       2
+      ]
+     },
+     {
+      "id": "dashengzhiyan",
+      "x": 693.59,
+      "y": 674.73,
+      "color": "#618344",
+      "tx": 615.59,
+      "ty": 612.73,
+      "size": 24,
+      "anchor": "end",
+      "lines": [
+       "大圣之眼 /",
+       "大圣之眼溶洞"
+      ],
+      "query": "大圣之眼 安顺",
+      "geo": {
+       "lat": 25.75,
+       "lng": 106.1
+      },
+      "days": [
+       3
+      ]
+     },
+     {
+      "id": "anshun-city",
+      "x": 646.47,
+      "y": 521.02,
+      "color": "#618344",
+      "tx": 784.47,
+      "ty": 433.02,
+      "size": 24,
+      "anchor": "start",
+      "lines": [
+       "安顺市区"
+      ],
+      "query": "安顺市区",
+      "geo": {
+       "lat": 26.25,
+       "lng": 105.93
+      },
+      "days": [
+       3,
+       4,
+       5,
+       6
+      ]
+     },
+     {
+      "id": "yelang-tianlu",
+      "x": 501.73,
+      "y": 519.17,
+      "color": "#209aaa",
+      "tx": 639.73,
+      "ty": 621.17,
+      "size": 24,
+      "anchor": "start",
+      "lines": [
+       "夜郎天路·龙脊山 /",
+       "夜郎天路龙脊山"
+      ],
+      "query": "夜郎天路 六枝牂牁",
+      "geo": {
+       "lat": 26.15,
+       "lng": 105.55
+      },
+      "days": [
+       4
+      ]
+     },
+     {
+      "id": "huajiang-canyon",
+      "x": 526.15,
+      "y": 791.4,
+      "color": "#8865a5",
+      "tx": 558.15,
+      "ty": 759.4,
+      "size": 24,
+      "anchor": "start",
+      "lines": [
+       "花江峡谷 /",
+       "花江峡谷北盘江大桥"
+      ],
+      "query": "花江峡谷 关岭",
+      "geo": {
+       "lat": 25.45,
+       "lng": 105.62
+      },
+      "days": [
+       5
+      ]
+     },
+     {
+      "id": "yunfeng-tunbao",
+      "x": 618.62,
+      "y": 427.86,
+      "color": "#df6185",
+      "tx": 586.62,
+      "ty": 395.86,
+      "size": 24,
+      "anchor": "end",
+      "lines": [
+       "云峰屯堡 /",
+       "云峰屯堡云鹫山"
+      ],
+      "query": "云峰屯堡 安顺",
+      "geo": {
+       "lat": 26.28,
+       "lng": 105.92
+      },
+      "days": [
+       6
+      ]
+     }
+    ],
+    "overviewPlaceIds": [
+     "guiyang-airport",
+     "guiyang-city",
+     "yangpidong",
+     "dashengzhiyan",
+     "anshun-city",
+     "yelang-tianlu",
+     "huajiang-canyon",
+     "yunfeng-tunbao"
+    ],
+    "dailyLayouts": {
+     "1": {
+      "places": [
+       "guiyang-airport",
+       "guiyang-city"
+      ],
+      "labels": {
+       "guiyang-airport": {
+        "x": 981.39,
+        "y": 344.02,
+        "anchor": "start"
+       },
+       "guiyang-city": {
+        "x": 835.35,
+        "y": 368.02,
+        "anchor": "end"
+       }
+      },
+      "transport": [
+       {
+        "items": [
+         "d1-01",
+         "d1-02"
+        ],
+        "x": 908.37,
+        "y": 347.02
+       }
+      ]
+     },
+     "2": {
+      "places": [
+       "guiyang-city",
+       "yangpidong"
+      ],
+      "labels": {
+       "guiyang-city": {
+        "x": 835.35,
+        "y": 368.02,
+        "anchor": "end"
+       },
+       "yangpidong": {
+        "x": 848.34,
+        "y": 196.6,
+        "anchor": "start"
+       }
+      },
+      "transport": [
+       {
+        "items": [
+         "d2-01",
+         "d2-02"
+        ],
+        "x": 818.85,
+        "y": 288.31
+       }
+      ]
+     },
+     "3": {
+      "places": [
+       "guiyang-city",
+       "dashengzhiyan",
+       "anshun-city"
+      ],
+      "labels": {
+       "guiyang-city": {
+        "x": 835.35,
+        "y": 368.02,
+        "anchor": "end"
+       },
+       "dashengzhiyan": {
+        "x": 615.59,
+        "y": 612.73,
+        "anchor": "end"
+       },
+       "anshun-city": {
+        "x": 784.47,
+        "y": 433.02,
+        "anchor": "start"
+       }
+      },
+      "transport": [
+       {
+        "items": [
+         "d3-01",
+         "d3-02"
+        ],
+        "x": 780.47,
+        "y": 496.38
+       },
+       {
+        "items": [
+         "d3-04",
+         "d3-05"
+        ],
+        "x": 670.03,
+        "y": 597.88
+       }
+      ]
+     },
+     "4": {
+      "places": [
+       "anshun-city",
+       "yelang-tianlu"
+      ],
+      "labels": {
+       "anshun-city": {
+        "x": 784.47,
+        "y": 433.02,
+        "anchor": "start"
+       },
+       "yelang-tianlu": {
+        "x": 639.73,
+        "y": 621.17,
+        "anchor": "start"
+       }
+      },
+      "transport": [
+       {
+        "items": [
+         "d4-01",
+         "d4-02"
+        ],
+        "x": 574.1,
+        "y": 520.1
+       }
+      ]
+     },
+     "5": {
+      "places": [
+       "anshun-city",
+       "huajiang-canyon"
+      ],
+      "labels": {
+       "anshun-city": {
+        "x": 784.47,
+        "y": 433.02,
+        "anchor": "start"
+       },
+       "huajiang-canyon": {
+        "x": 558.15,
+        "y": 759.4,
+        "anchor": "start"
+       }
+      },
+      "transport": [
+       {
+        "items": [
+         "d5-01",
+         "d5-02"
+        ],
+        "x": 586.31,
+        "y": 656.21
+       }
+      ]
+     },
+     "6": {
+      "places": [
+       "anshun-city",
+       "yunfeng-tunbao",
+       "guiyang-airport"
+      ],
+      "labels": {
+       "anshun-city": {
+        "x": 784.47,
+        "y": 433.02,
+        "anchor": "start"
+       },
+       "yunfeng-tunbao": {
+        "x": 586.62,
+        "y": 395.86,
+        "anchor": "end"
+       },
+       "guiyang-airport": {
+        "x": 981.39,
+        "y": 344.02,
+        "anchor": "start"
+       }
+      },
+      "transport": [
+       {
+        "items": [
+         "d6-01",
+         "d6-02"
+        ],
+        "x": 632.55,
+        "y": 474.44
+       },
+       {
+        "items": [
+         "d6-05",
+         "d6-06"
+        ],
+        "x": 784,
+        "y": 401.94
+       }
+      ]
+     }
+    }
+   }
+  ]
+ }
+}
